@@ -13,68 +13,49 @@ import {
 // Easily add/remove pricing packages here
 const pricingPackages = [
   {
-    id: "basic",
-    name: "Essential",
-    price: "₱15,000",
-    description: "Perfect for small sessions and personal projects",
-    features: [
-      "2-hour session",
-      "1 location",
-      "30 edited photos",
-      "Online gallery",
-      "Print-ready files",
-    ],
-  },
-  {
     id: "standard",
-    name: "Standard",
-    price: "₱25,000",
-    description: "Our most popular package for memorable occasions",
+    name: "Regular",
+    price: "Rp.120,000",
+    description: "Our most popular package for Solo occasions",
     features: [
-      "4-hour session",
-      "2 locations",
-      "75 edited photos",
+      "1-hour session",
+      "On-site locations",
+      "10 edited photos",
       "Online gallery",
-      "Print-ready files",
       "1 photographer",
     ],
     popular: true,
   },
   {
     id: "premium",
-    name: "Premium",
-    price: "₱45,000",
-    description: "Comprehensive coverage for your special moments",
+    name: "Family",
+    price: "Rp.150,000",
+    description: "Comprehensive coverage for your Family's special moments",
     features: [
-      "Full day coverage",
-      "Unlimited locations",
-      "150+ edited photos",
+       "1-hour session",
+      "On-site locations",
+      "10 edited photos",
       "Online gallery",
-      "Print-ready files",
-      "2 photographers",
-      "Same-day preview",
+      "1 photographer",
     ],
   },
   {
-    id: "wedding",
-    name: "Wedding",
-    price: "₱85,000",
-    description: "Complete wedding documentation package",
+    id: "Famfren",
+    name: "Family & Friends",
+    price: "Rp.180,000",
+    description: "Extended coverage for larger groups and gatherings",
     features: [
-      "12-hour coverage",
-      "Engagement session",
-      "300+ edited photos",
-      "Premium album",
+       "1-hour session",
+      "On-site locations",
+      "10 edited photos",
       "Online gallery",
-      "2 photographers",
-      "Same-day preview",
-      "Highlight video",
+      "1-2 photographer",
     ],
   },
   {
-    id: "corporate",
-    name: "Corporate",
-    price: "Custom",
+    id: "Video",
+    name: "Video",
+    price: "Rp.210,000",
     description: "Tailored solutions for business needs",
     features: [
       "Flexible duration",
@@ -87,6 +68,11 @@ const pricingPackages = [
     ],
   },
 ];
+const addOns = [
+  { label: "Extra hour of coverage", price: "Rp.50,000/hr" },
+  { label: "Additional edited photos (per 5)", price: "Rp.25,000" },
+];
+
 
 const Pricing = () => {
   return (
@@ -107,7 +93,7 @@ const Pricing = () => {
       </section>
 
       {/* Pricing Carousel */}
-      <section className="py-16 md:py-24 px-6 lg:px-12">
+      <section className="pt-8 pb-16 md:pb-24 px-6 lg:px-12">
         <div className="container mx-auto max-w-7xl">
           <Carousel
             opts={{
@@ -116,21 +102,21 @@ const Pricing = () => {
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-4 overflow-visible pt-4">
               {pricingPackages.map((pkg) => (
                 <CarouselItem
                   key={pkg.id}
                   className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
                 >
                   <div
-                    className={`relative h-full p-8 border transition-all duration-300 hover-lift ${
+                    className={`relative h-full p-8 pt-10 border transition-all duration-300 hover-lift ${
                       pkg.popular
                         ? "border-primary bg-red-light"
                         : "border-border bg-background hover:border-primary/50"
                     }`}
                   >
                     {pkg.popular && (
-                      <div className="absolute -top-3 left-8 bg-primary text-primary-foreground px-4 py-1 text-xs uppercase tracking-wider font-body">
+                      <div className="absolute top-0 left-8 -translate-y-1/2 bg-primary text-primary-foreground px-4 py-1 text-xs uppercase tracking-wider font-body whitespace-nowrap">
                         Most Popular
                       </div>
                     )}
@@ -180,6 +166,29 @@ const Pricing = () => {
               <CarouselNext className="static translate-y-0 bg-background border-border hover:bg-secondary hover:border-primary" />
             </div>
           </Carousel>
+        </div>
+      </section>
+
+      {/* Add-Ons */}
+      <section className="py-16 md:py-24 px-6 lg:px-12">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-display font-light mb-4 text-center">
+            <span className="italic">Add-Ons</span>
+          </h2>
+          <p className="text-muted-foreground font-body text-center mb-10">
+            Enhance any package with these extras.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {addOns.map((item) => (
+              <div
+                key={item.label}
+                className="flex items-center justify-between p-5 border border-border hover:border-primary/50 transition-colors"
+              >
+                <span className="font-body text-sm">{item.label}</span>
+                <span className="font-display text-lg">{item.price}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

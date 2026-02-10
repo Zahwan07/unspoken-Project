@@ -1,29 +1,47 @@
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
-import heroImage from "@/assets/hero-photography.jpg";
-import portfolioPortrait from "@/assets/portfolio-portrait.jpg";
+import heroImage from "@/assets/IMG_9599.jpg";
+import portfolioPortrait from "@/assets/Ben-1.jpg";
 import portfolioWedding from "@/assets/portfolio-wedding.jpg";
-import portfolioFashion from "@/assets/portfolio-fashion.jpg";
-import portfolioEvents from "@/assets/portfolio-events.jpg";
+import portfolioFashion from "@/assets/Zaki-1.jpg";
+import portfolioEvents from "@/assets/Zahwan-1.jpg";
 
 const categories = [
-  { name: "Portraits", image: portfolioPortrait, photographer: "Sarah Chen" },
-  { name: "Weddings", image: portfolioWedding, photographer: "Marcus Rivera" },
-  { name: "Fashion", image: portfolioFashion, photographer: "Emma Noir" },
-  { name: "Events", image: portfolioEvents, photographer: "Alex Torres" },
+  { name: "Athian", image: portfolioPortrait, photographer: "Manager" },
+  { name: "Tya", image: portfolioPortrait, photographer: "Social Media Manager" },
+  { name: "Fadhlan", image: portfolioWedding, photographer: "Photographer 1" },
+  { name: "Zaki", image: portfolioFashion, photographer: "Photographer 2" },
+  { name: "Zahwan", image: portfolioEvents, photographer: "Photographer 3" },
 ];
 
+const heroImages = [heroImage, portfolioPortrait, portfolioWedding, portfolioFashion, portfolioEvents];
+
 const Index = () => {
+  const [currentHero, setCurrentHero] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentHero((prev) => (prev + 1) % heroImages.length);
+        setFade(true);
+      }, 1200);
+    }, 12000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={heroImage}
+            src={heroImages[currentHero]}
             alt="Photography studio"
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover transition-opacity duration-700 ${fade ? "opacity-100" : "opacity-0"}`}
           />
           <div className="absolute inset-0 bg-foreground/40" />
         </div>
@@ -36,7 +54,7 @@ const Index = () => {
             The <span className="italic text-primary">Unspoken</span> Project
           </h1>
           <p className="text-lg md:text-xl font-body font-light max-w-xl mx-auto mb-10 text-background/90">
-            Capturing moments that speak louder than words
+            Where graduation meets perfection
           </p>
           <Link
             to="/portfolio"
@@ -77,7 +95,7 @@ const Index = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {categories.map((category, index) => (
               <Link
                 key={category.name}
@@ -90,7 +108,7 @@ const Index = () => {
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-foreground/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-xs uppercase tracking-wider text-background/70 mb-1 font-body">
                     {category.photographer}

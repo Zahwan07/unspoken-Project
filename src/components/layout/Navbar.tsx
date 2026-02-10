@@ -19,22 +19,22 @@ const Navbar = () => {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <span className="text-2xl font-display font-semibold tracking-tight">
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-xl md:text-2xl font-heading font-semibold tracking-tight">
               The <span className="text-primary">Unspoken</span> Project
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium tracking-wide uppercase transition-colors duration-300 line-reveal ${
+                className={`text-sm font-medium tracking-wide uppercase transition-colors duration-300 hover:text-primary ${
                   location.pathname === link.path
                     ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
+                    : "text-foreground/70"
                 }`}
               >
                 {link.name}
@@ -54,19 +54,18 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-6 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-4">
-              {navLinks.map((link, index) => (
+          <div className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-border animate-fade-in">
+            <div className="flex flex-col py-6">
+              {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`text-lg font-display py-2 transition-colors ${
+                  className={`px-6 py-4 text-sm font-medium tracking-wide uppercase transition-colors duration-300 hover:text-primary hover:bg-muted ${
                     location.pathname === link.path
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
+                      ? "text-primary bg-muted"
+                      : "text-foreground/70"
                   }`}
-                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {link.name}
                 </Link>

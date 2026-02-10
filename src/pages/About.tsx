@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import heroImage from "@/assets/hero-photography.jpg";
+import heroImage from "@/assets/Hero-1.jpg";
 
 const About = () => {
   return (
@@ -123,10 +123,10 @@ const About = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { name: "Sarah Chen", role: "Portrait Specialist" },
-              { name: "Marcus Rivera", role: "Wedding Photographer" },
-              { name: "Emma Noir", role: "Fashion Photographer" },
-              { name: "Alex Torres", role: "Events Photographer" },
+              { name: "Athian", role: "Portrait Specialist" },
+              { name: "Fadhlan", role: "Wedding Photographer" },
+              { name: "Zaki", role: "Fashion Photographer" },
+              { name: "Zahwan", role: "Events Photographer" },
             ].map((member, index) => (
               <div
                 key={member.name}

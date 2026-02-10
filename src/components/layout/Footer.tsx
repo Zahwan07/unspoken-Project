@@ -11,7 +11,7 @@ const Footer = () => {
               The <span className="text-primary">Unspoken</span> Project
             </h3>
             <p className="text-background/70 font-body text-sm leading-relaxed">
-              Capturing moments that speak louder than words.
+            Where graduation meets perfection
             </p>
           </div>
 
