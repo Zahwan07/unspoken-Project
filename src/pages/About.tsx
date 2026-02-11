@@ -109,40 +109,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-24 md:py-32 px-6 lg:px-12">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-16">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary mb-4 font-body">
-              Meet the Artists
-            </p>
-            <h2 className="text-3xl md:text-4xl font-display font-light">
-              Our <span className="italic">Team</span>
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { name: "Athian", role: "Portrait Specialist" },
-              { name: "Fadhlan", role: "Wedding Photographer" },
-              { name: "Zaki", role: "Fashion Photographer" },
-              { name: "Zahwan", role: "Events Photographer" },
-            ].map((member, index) => (
-              <div
-                key={member.name}
-                className="text-center animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="aspect-square bg-secondary mb-4 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-muted to-secondary" />
-                </div>
-                <h3 className="text-lg font-display">{member.name}</h3>
-                <p className="text-sm text-muted-foreground font-body">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
     </Layout>
   );
 };

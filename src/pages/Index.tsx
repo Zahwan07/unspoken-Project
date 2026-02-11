@@ -2,21 +2,29 @@ import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
-import heroImage from "@/assets/IMG_9599.jpg";
-import portfolioPortrait from "@/assets/Ben-1.jpg";
-import portfolioWedding from "@/assets/portfolio-wedding.jpg";
-import portfolioFashion from "@/assets/Zaki-1.jpg";
-import portfolioEvents from "@/assets/Zahwan-1.jpg";
+import showcaseimage1 from "@/assets/showcase1.jpg";
+import showcaseimage2 from "@/assets/showcase2.jpg";
+import showcaseimage4 from "@/assets/showcase4.jpg";
+import showcaseimage5 from "@/assets/showcase5.jpg";
+import showcaseimage8 from "@/assets/showcase8.jpg";
+import showcaseimage9 from "@/assets/showcase9.jpg";
+import showcaseimage10 from "@/assets/showcase10.jpg";
+
+import portfolioZah from "@/assets/Zahwan-1.jpg";
+//import portfolioTya from "@/assets/Ben-1.jpg";
+import portfolioFadhlan from "@/assets/portfolio-wedding.jpg";
+import portfolioZaki from "@/assets/Zaki-1.jpg";
+import portfolioBen from "@/assets/Ben-1.jpg";
 
 const categories = [
-  { name: "Athian", image: portfolioPortrait, photographer: "Manager" },
-  { name: "Tya", image: portfolioPortrait, photographer: "Social Media Manager" },
-  { name: "Fadhlan", image: portfolioWedding, photographer: "Photographer 1" },
-  { name: "Zaki", image: portfolioFashion, photographer: "Photographer 2" },
-  { name: "Zahwan", image: portfolioEvents, photographer: "Photographer 3" },
+  { name: "Athian", image: portfolioBen, photographer: "Manager" },
+  //{ name: "Tya", image: portfolioTya, photographer: "Social Media Manager" },
+  { name: "Fadhlan", image: portfolioFadhlan, photographer: "Photographer 1" },
+  { name: "Zaki", image: portfolioZaki, photographer: "Photographer 2" },
+  { name: "Zahwan", image: portfolioZah, photographer: "Photographer 3" },
 ];
 
-const heroImages = [heroImage, portfolioPortrait, portfolioWedding, portfolioFashion, portfolioEvents];
+const heroImages = [showcaseimage10, showcaseimage2, showcaseimage4, showcaseimage5, showcaseimage8, showcaseimage9, showcaseimage1];
 
 const Index = () => {
   const [currentHero, setCurrentHero] = useState(0);
@@ -73,9 +81,9 @@ const Index = () => {
             Where Vision Meets <span className="italic text-primary">Artistry</span>
           </h2>
           <p className="text-lg text-muted-foreground font-body leading-relaxed">
-            We are a collective of passionate photographers dedicated to telling your story 
-            through the lens. From intimate portraits to grand celebrations, we transform 
-            fleeting moments into timeless memories.
+            Karena setiap momen memiliki cerita yang tak terucap. Lewat lensa dan desain, 
+            kami hadir untuk mengabadikan esensi terdalam dari setiap detail, 
+            memastikan pesan Anda tersampaikan dengan indah melalui karya visual yang berjiwa.
           </p>
         </div>
       </section>
@@ -95,7 +103,8 @@ const Index = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">  {/* jadiin cols-5 kalo tya jadi */}
             {categories.map((category, index) => (
               <Link
                 key={category.name}
@@ -126,12 +135,11 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-24 md:py-32 px-6 lg:px-12 bg-foreground text-background">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl md:text-5xl font-display font-light mb-6">
-            Ready to Create Something <span className="italic text-primary">Beautiful</span>?
+          <h2 className="text-3xl md:text-5xl font-display font-light mb-6 animate-fade-in">
+            Siap Menciptakan Sesuatu yang <span className="italic text-primary"> Berkesan</span>?
           </h2>
           <p className="text-lg text-background/70 mb-10 font-body">
-            Let's collaborate and bring your vision to life.
-          </p>
+           Mulai perjalanan anda bersama kami dan biarkan karya bicara lebih lantang dari kata-kata.          </p>
           <Link
             to="/contact"
             className="inline-flex items-center gap-3 bg-primary hover:bg-red-deep text-primary-foreground px-8 py-4 text-sm uppercase tracking-wider transition-all duration-300 hover-lift font-body"

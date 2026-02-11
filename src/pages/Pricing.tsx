@@ -49,7 +49,7 @@ const pricingPackages = [
       "On-site locations",
       "10 edited photos",
       "Online gallery",
-      "1-2 photographer",
+      "1-2 photographers",
     ],
   },
   {
@@ -58,13 +58,11 @@ const pricingPackages = [
     price: "Rp.210,000",
     description: "Tailored solutions for business needs",
     features: [
-      "Flexible duration",
-      "Multiple sessions",
-      "Commercial license",
-      "Team headshots",
-      "Event coverage",
+      "1-2 hour session",
+      "On-site locations",
+      "1 photographer",
       "Quick turnaround",
-      "Brand guidelines",
+
     ],
   },
 ];

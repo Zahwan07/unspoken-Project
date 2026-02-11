@@ -2,11 +2,11 @@ import { MessageCircle, ArrowRight } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 
 // Update this with your manager's WhatsApp number (including country code, no spaces or special characters)
-const WHATSAPP_NUMBER = "639123456789"; // Example: Philippine number
+const WHATSAPP_NUMBER = "+62 851-5692-4712"; // Example: Philippine number
 const WHATSAPP_MESSAGE = "Hello! I'm interested in booking a photography session with The Unspoken Project.";
 
 const Contact = () => {
-  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+const whatsappLink = `https://wa.me/6285156924712?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
     <Layout>
@@ -64,7 +64,7 @@ const Contact = () => {
         </div>
       </section>
     </Layout>
-  );
+  );  
 };
 
 export default Contact;
