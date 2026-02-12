@@ -10,16 +10,18 @@ import portfolioZah5 from "@/assets/Zahwan-6.jpg";
 import portfolioZah6 from "@/assets/Zahwan-7.jpg";
 import portfolioZah7 from "@/assets/Zahwan-8.jpg";
 import portfolioZah8 from "@/assets/Zahwan-9.jpg";
+
 //import portfolioTya from "@/assets/Tya-1.jpg";
-import portfolioFadhlan from "@/assets/Ben WKWK.png";
+
+import portfolioFadhlan from "@/assets/Fadhlan- (0).jpeg";
 import portfolioFadhlan2 from "@/assets/Fadhlan- (1).jpg";
 import portfolioFadhlan3 from "@/assets/Fadhlan- (2).jpg";
 import portfolioFadhlan4 from "@/assets/Fadhlan- (3).jpg";
 import portfolioFadhlan5 from "@/assets/Fadhlan- (4).jpg";
 import portfolioFadhlan6 from "@/assets/Fadhlan- (5).jpg";
-import portfolioFadhlan7 from "@/assets/portfolio-portrait.jpg";
-import portfolioFadhlan8 from "@/assets/portfolio-portrait.jpg";
-import portfolioFadhlan9 from "@/assets/portfolio-portrait.jpg";
+import portfolioFadhlan7 from "@/assets/Fadhlan- (6).jpg";
+import portfolioFadhlan8 from "@/assets/Fadhlan- (7).jpg";
+import portfolioFadhlan9 from "@/assets/Fadhlan- (8).jpg";
 
 
 import portfolioZaki from "@/assets/Zaki-1.jpg";
@@ -27,16 +29,16 @@ import portfolioZaki2 from "@/assets/Zaki- (1).jpg";
 import portfolioZaki3 from "@/assets/Zaki- (2).jpg";
 import portfolioZaki4 from "@/assets/Zaki- (3).jpg";     
 import portfolioZaki5 from "@/assets/Zaki- (4).jpg";
-import portfolioZaki6 from "@/assets/portfolio-fashion.jpg";
-import portfolioZaki7 from "@/assets/portfolio-fashion.jpg";
-import portfolioZaki8 from "@/assets/portfolio-fashion.jpg";
-import portfolioZaki9 from "@/assets/portfolio-fashion.jpg";
+import portfolioZaki6 from "@/assets/Zaki- (5).jpg";
+import portfolioZaki7 from "@/assets/Zaki- (6).jpg";
+import portfolioZaki8 from "@/assets/Zaki- (7).jpg";
+import portfolioZaki9 from "@/assets/Zaki- (8).jpg";
 
 
 import portfolioBen from "@/assets/Ben-1.jpg";  
-import portfolioBen1 from "@/assets/Ben-1.jpg";  
-import portfolioBen2 from "@/assets/Ben-1.jpg";
-import portfolioBen3 from "@/assets/Ben-1.jpg";
+import portfolioBen1 from "@/assets/Ben-2.jpg";  
+import portfolioBen2 from "@/assets/Ben-3.jpg";
+import portfolioBen3 from "@/assets/Ben-4.jpg";
 import portfolioBen4 from "@/assets/Ben-1.jpg";  
     
 
@@ -64,8 +66,8 @@ const categories: { label: string; people: Person[] }[] = [
       {
         id: "Athian",
         name: "Athian",
-        specialty: "Manager",
-        description: "Capturing the essence of personality through intimate portrait sessions.",
+        specialty: "Landscape",
+        description: "Capturing the beauty of nature and expansive outdoor scenes.",
         image: portfolioBen,
         photos: [portfolioBen1, portfolioBen2, portfolioBen3, portfolioBen4],
       },
@@ -85,16 +87,16 @@ const categories: { label: string; people: Person[] }[] = [
       {
         id: "Fadhlan",
         name: "Fadhlan",
-        specialty: "Fashion",
-        description: "Bold editorial vision meets high fashion in every frame.",
+        specialty: "Portrait",
+        description: "Specializing in capturing the beauty and emotion of individual and group portraits.",
         image: portfolioFadhlan,
         photos: [portfolioFadhlan2, portfolioFadhlan3, portfolioFadhlan4, portfolioFadhlan5, portfolioFadhlan6, portfolioFadhlan7, portfolioFadhlan8, portfolioFadhlan9],
       },
       {
         id: "Zaki",
         name: "Zaki",
-        specialty: "Events",
-        description: "Capturing the energy and emotion of your most memorable occasions.",
+        specialty: "Street Photography",
+        description: "Finding beauty in everyday moments and urban landscapes.",
         image: portfolioZaki,
         photos: [portfolioZaki2, portfolioZaki3, portfolioZaki4, portfolioZaki5, portfolioZaki6, portfolioZaki7, portfolioZaki8, portfolioZaki9],
       },

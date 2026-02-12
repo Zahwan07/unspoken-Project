@@ -7,12 +7,11 @@ import showcaseimage2 from "@/assets/showcase2.jpg";
 import showcaseimage4 from "@/assets/showcase4.jpg";
 import showcaseimage5 from "@/assets/showcase5.jpg";
 import showcaseimage8 from "@/assets/showcase8.jpg";
-import showcaseimage9 from "@/assets/showcase9.jpg";
 import showcaseimage10 from "@/assets/showcase10.jpg";
 
 import portfolioZah from "@/assets/Zahwan-1.jpg";
 //import portfolioTya from "@/assets/Ben-1.jpg";
-import portfolioFadhlan from "@/assets/portfolio-wedding.jpg";
+import portfolioFadhlan from "@/assets//Fadhlan- (0).jpeg";
 import portfolioZaki from "@/assets/Zaki-1.jpg";
 import portfolioBen from "@/assets/Ben-1.jpg";
 
@@ -24,7 +23,7 @@ const categories = [
   { name: "Zahwan", image: portfolioZah, photographer: "Photographer 3" },
 ];
 
-const heroImages = [showcaseimage10, showcaseimage2, showcaseimage4, showcaseimage5, showcaseimage8, showcaseimage9, showcaseimage1];
+const heroImages = [showcaseimage10, showcaseimage2, showcaseimage4, showcaseimage5, showcaseimage8, showcaseimage1];
 
 const Index = () => {
   const [currentHero, setCurrentHero] = useState(0);
