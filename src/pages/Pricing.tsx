@@ -53,21 +53,22 @@ const pricingPackages = [
     ],
   },
   {
-    id: "Video",
-    name: "Video",
-    price: "Rp.210,000",
-    description: "Tailored solutions for business needs",
+    id: "Video Only",
+    name: "Video Only",
+    price: "Rp.150,000",
+    description: "Perfect for capturing dynamic moments with cinematic flair",
     features: [
       "1-2 hour session",
       "On-site locations",
       "1 photographer",
-      "Quick turnaround",
+      "1 edited video (3-5 mins)",
 
     ],
   },
 ];
 const addOns = [
   { label: "Extra hour of coverage", price: "Rp.50,000/hr" },
+  { label: "Additional Video", price: "Rp.100,000" },
   { label: "Additional edited photos (per 5)", price: "Rp.25,000" },
 ];
 
