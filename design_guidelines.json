@@ -1,0 +1,187 @@
+{
+  "theme": "light",
+  "typography": {
+    "fonts": {
+      "headings": "Cormorant Garamond, serif",
+      "body": "Outfit, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl lg:text-[6vw] tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.1]",
+      "h3": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed text-[#111111]",
+      "muted": "text-sm text-[#6B6B6B] uppercase tracking-[0.2em]"
+    },
+    "rules": [
+      "Avoid Inter, Roboto, Space Grotesk completely.",
+      "Use Cormorant Garamond for main display headings, giving it a high-end editorial feel.",
+      "Counters, pagination ('01 — 05') should use mono or minimal sans with wide tracking.",
+      "Do not use generic bold everywhere; utilize font-light or font-medium for elegance."
+    ]
+  },
+  "colors": {
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#FAFAFA"
+    },
+    "text": {
+      "primary": "#111111",
+      "muted": "#6B6B6B",
+      "inverse": "#FFFFFF"
+    },
+    "accent": {
+      "red": "#E10600",
+      "redHover": "#B30500"
+    },
+    "rules": [
+      "White background discipline is core.",
+      "Red (#E10600) is ONLY for accents: active dots, thin thread lines, primary CTA buttons, hover states. NEVER use large red blocks or full backgrounds.",
+      "Borders and dividers should be ultra-thin: border-black/10 or border-[#E10600]/30.",
+      "Avoid any gradients unless it's a subtle black scrim for hero text legibility (max bg-black/40)."
+    ]
+  },
+  "visual_enhancers": {
+    "borders": "Square corners (rounded-none) for all images and cards to mimic printed editorial photos. Buttons can be slightly rounded (rounded-sm) or pill-shaped for contrast.",
+    "shadows": "Minimal to none. Use 1px borders (border-black/5) to define edges rather than soft shadows.",
+    "photography": "Spotlight effect, high contrast. Use grayscale filters on hover out, or color on hover in.",
+    "dividers": "Use thin red lines (1px h-full or w-full bg-[#E10600]) for structural dividers and reading flow."
+  },
+  "motion": {
+    "libraries": [
+      "framer-motion",
+      "lenis",
+      "react-fast-marquee"
+    ],
+    "specs": {
+      "duration": "0.8s to 1.2s",
+      "easing": "[0.76, 0, 0.24, 1] (Custom cubic-bezier for premium cinematic feel)",
+      "stagger": "0.1s to 0.15s"
+    },
+    "signature_animations": [
+      "Masked line-by-line headline reveal: wrap text lines in overflow-hidden, translate Y from 100% to 0.",
+      "Subtle Parallax: Hero images scale from 1.1 to 1.0 on load, and translate Y slightly on scroll.",
+      "Red Thread: A vertical 1px red line that grows on scroll or acts as a progress bar for the hero carousel.",
+      "Hover: Images scale up slightly inside a clipped frame (overflow-hidden)."
+    ]
+  },
+  "components": {
+    "navigation": {
+      "style": "Sticky minimal nav. Backdrop-blur-xl bg-white/80. Border-b border-black/5.",
+      "layout": "Logo left (Cormorant Garamond), Links right (Outfit, uppercase, text-xs, tracking-widest). Mobile: hamburger menu.",
+      "interaction": "Links have a red underline that scales X on hover (origin-left)."
+    },
+    "hero_carousel": {
+      "layout": "Full-screen (h-screen). Absolute positioned images.",
+      "features": "Autoplay, swipe/drag, pause on hover. Vertical red thread progress line on the left/right edge. Slide counter '01 \u2014 05'.",
+      "accessibility": "Keyboard arrow navigation."
+    },
+    "pricing_cards": {
+      "layout": "Horizontal scrollable flex/grid container with snap-x snap-mandatory.",
+      "style": "Border border-black/10. Center-focused active card scales up (scale-105) and gets a subtle shadow. Others scale-95 opacity-70.",
+      "action": "Solid red (#E10600) 'Inquire' button."
+    },
+    "portfolio_tiles": {
+      "layout": "4 large tiles, grid-cols-1 md:grid-cols-2 or 4 vertical columns on hover.",
+      "style": "Cover photo, specialty tag. Click expands to masonry gallery with lightbox."
+    },
+    "buttons": {
+      "primary": "bg-[#E10600] text-white px-8 py-4 text-sm tracking-widest uppercase hover:bg-black transition-colors duration-300",
+      "secondary": "bg-transparent text-[#111111] border border-black/20 px-8 py-4 text-sm tracking-widest uppercase hover:border-[#E10600] hover:text-[#E10600]"
+    }
+  },
+  "page_blueprints": {
+    "home": [
+      "Full-screen hero carousel",
+      "Brief intro with line-by-line reveal animation",
+      "Editorial Marquee (Stories told without words)",
+      "Featured portfolio strip (3-6 images)",
+      "Footer"
+    ],
+    "about": [
+      "Numbered manifesto chapters (01. Authenticity, 02. Emotion, 03. Detail)",
+      "B&W Founder portrait with short story",
+      "4 Photographers intro cards with links"
+    ],
+    "pricing": [
+      "Header with short copy",
+      "Data-driven swipeable carousel for packages",
+      "FAQ / Terms snippet"
+    ],
+    "portfolio": [
+      "Tab sub-nav (Photographer names)",
+      "Masonry grid galleries per photographer",
+      "Click to open Lightbox"
+    ],
+    "testimonials": [
+      "Alternating layout (Image left, text right; then reversed)",
+      "Hover reveal quotes for density",
+      "Mixed media (photo/video simulation)"
+    ],
+    "contact": [
+      "Centered minimalist layout",
+      "Massive 'Ready to tell your story?' text",
+      "Huge WhatsApp CTA button",
+      "Manager name/role below"
+    ]
+  },
+  "media": {
+    "image_urls": {
+      "hero_carousel": [
+        {
+          "url": "https://images.unsplash.com/photo-1662532577856-e8ee8b138a8b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxlZGl0b3JpYWwlMjBmYXNoaW9uJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg3NTc2MDkyfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Editorial Fashion",
+          "category": "hero"
+        },
+        {
+          "url": "https://images.pexels.com/photos/26960744/pexels-photo-26960744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "description": "Wedding Couple",
+          "category": "hero"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1606143412458-acc5f86de897?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwcG9ydHJhaXQlMjBwaG90b2dyYXBoZXxlbnwwfHx8fDE3ODc1NzYwOTJ8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Minimalist Portrait",
+          "category": "hero"
+        }
+      ],
+      "about_founder": [
+        {
+          "url": "https://images.unsplash.com/photo-1542992933-ce75d0187ec1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxzdHVkaW8lMjBwaG90b2dyYXBoZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODc1NzYwOTJ8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Studio photographer",
+          "category": "about"
+        }
+      ],
+      "portfolio_tiles": [
+        {
+          "url": "https://images.unsplash.com/photo-1601597565151-70c4020dc0e1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxlZGl0b3JpYWwlMjBmYXNoaW9uJTIwcGhvdG9ncmFwaHl8ZW58MHx8fHwxNzg3NTc2MDkyfDA&ixlib=rb-4.1.0&q=85",
+          "description": "Photographer 1 - Fashion",
+          "category": "portfolio_cover"
+        },
+        {
+          "url": "https://images.pexels.com/photos/27008972/pexels-photo-27008972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "description": "Photographer 2 - Wedding",
+          "category": "portfolio_cover"
+        },
+        {
+          "url": "https://images.pexels.com/photos/11091407/pexels-photo-11091407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "description": "Photographer 3 - Event",
+          "category": "portfolio_cover"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1674932668403-33398b81c92f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxtaW5pbWFsaXN0JTIwcG9ydHJhaXQlMjBwaG90b2dyYXBoZXxlbnwwfHx8fDE3ODc1NzYwOTJ8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Photographer 4 - Portrait",
+          "category": "portfolio_cover"
+        }
+      ]
+    }
+  },
+  "universal_guidelines_for_main_agent": [
+    "No generic centered layouts. Use grid logic with heavy asymmetry.",
+    "All interactive elements MUST include a data-testid attribute.",
+    "Do NOT use transparent backgrounds on headers over images; use a backdrop-blur.",
+    "Implement Lenis for smooth scrolling in the main layout.",
+    "Do not use generic 'transition: all'. Explicitly state transition properties.",
+    "Avoid AI emoji icons in the UI. Use Lucide or Phosphor if needed, but stick to text and thin lines where possible.",
+    "Create depth through layering, but keep edges sharp (no soft drop shadows unless specifically needed for the pricing center card)."
+  ]
+}
