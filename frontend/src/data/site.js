@@ -29,5 +29,5 @@ export const SOCIALS = [
 // TOGGLE: set SITE_HIBERNATING to true when the studio pauses (holidays,
 // breaks) — every visitor then sees a "we'll be back soon" page instead of
 // the website. Set back to false to reopen.
-export const SITE_HIBERNATING = false;
+export const SITE_HIBERNATING = true;
 export const HIBERNATION_RETURN_DATE = "Will be back after November!";
