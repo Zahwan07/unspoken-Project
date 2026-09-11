@@ -23,13 +23,11 @@ export const NAV_LINKS = [
 
 export const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/the_unspokenproject/" },
-  { label: "Facebook", href: "https://facebook.com/theunspokenproject" },
-  { label: "YouTube", href: "https://youtube.com/@theunspokenproject" },
 ];
 
 // ── Hibernation mode ──────────────────────────────────────────────────────
 // TOGGLE: set SITE_HIBERNATING to true when the studio pauses (holidays,
 // breaks) — every visitor then sees a "we'll be back soon" page instead of
 // the website. Set back to false to reopen.
-export const SITE_HIBERNATING = false;
+export const SITE_HIBERNATING = true;
 export const HIBERNATION_RETURN_DATE = "Will be back after November!";

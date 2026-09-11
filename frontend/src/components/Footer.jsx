@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { NAV_LINKS, SOCIALS, BRAND, TAGLINE } from "@/data/site";
 import { PHOTOGRAPHERS } from "@/data/photographers";
 
-const ICONS = { Instagram, Facebook, YouTube: Youtube };
+const ICONS = { Instagram };
 
 export default function Footer() {
   return (
@@ -15,8 +15,7 @@ export default function Footer() {
               The Unspoken <span className="italic text-brand">Project</span>
             </p>
             <p className="mt-3 max-w-xs text-base leading-relaxed text-smoke">
-              {TAGLINE}. A photography crew for graduations, portraits, street,
-              and the everyday in-between.
+              {TAGLINE}. Where graduation meets perfection
             </p>
             <p className="mt-4 -rotate-1 font-hand text-2xl text-brand">
               shot on campus & beyond
@@ -85,7 +84,7 @@ export default function Footer() {
             © 2026 {BRAND}. All stories reserved.
           </p>
           <p className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.25em] text-smoke">
-            Jakarta <span className="h-1 w-1 rounded-full bg-brand" /> Studio
+            Bandung <span className="h-1 w-1 rounded-full bg-brand" /> Photography
           </p>
         </div>
       </div>
