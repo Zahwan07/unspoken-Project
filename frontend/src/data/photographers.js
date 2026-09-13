@@ -97,7 +97,7 @@ export const PHOTOGRAPHERS = [
     specialty: "Nature & Video",
     tagline: "Loves to capture the beauty of nature and the best moments of life.",
     portrait: "/uploads/sabila-0.jpg",
-    cover: "/uploads/Sabila-0.jpg",
+    cover: "/uploads/sabila-0.jpg",
     gallery: [
       { src: "/uploads/Sabila-1.jpg", alt: "Nature — forest" },
       { src: "/uploads/Sabila-2.jpg", alt: "Nature — landscape" },

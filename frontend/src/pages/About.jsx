@@ -23,8 +23,8 @@ const CHAPTERS = [
 
 const STATS = [
   { value: "07", label: "People, one crew" },
-  { value: "480+", label: "Sessions completed" },
-  { value: "320+", label: "Stories told" },
+  { value: "30+", label: "Sessions completed" },
+  { value: "40+", label: "Stories told" },
 ];
 
 export default function About() {
@@ -33,14 +33,14 @@ export default function About() {
       {/* Header */}
       <section className="mx-auto max-w-[1440px] px-6 pb-20 pt-32 md:px-10 md:pt-44">
         <Reveal>
-          <SectionTag>About the Studio</SectionTag>
+          <SectionTag>About the Team</SectionTag>
         </Reveal>
         <h1 className="mt-6 max-w-5xl font-display text-5xl font-normal leading-[1.02] tracking-tight text-ink sm:text-6xl lg:text-7xl" data-testid="about-title">
           <MaskedLines lines={["We photograph what", "words cannot carry."]} />
         </h1>
         <Reveal delay={0.3} className="mt-8 max-w-xl">
           <p className="text-base leading-relaxed text-smoke md:text-lg">
-            Founded in a borrowed studio with one camera and a stubborn idea —
+            Founded in a cafe with one camera and a stubborn idea —
             that photography should listen more than it speaks. Today we are
             seven people, one philosophy, and hundreds of quiet stories.
           </p>
@@ -54,7 +54,7 @@ export default function About() {
             <Reveal>
               <div className="overflow-hidden">
                 <img
-                  src="/uploads/a8.jpg"
+                  src="/uploads/athian-4.jpg"
                   alt="A quiet moment before the ceremony — The Unspoken Project"
                   loading="lazy"
                   className="aspect-[4/5] w-full object-cover transition-transform duration-700 ease-cinematic hover:scale-[1.02]"
@@ -68,12 +68,12 @@ export default function About() {
               <SectionTag>The Beginning</SectionTag>
             </Reveal>
             <h2 className="mt-5 font-display text-3xl font-normal leading-[1.1] tracking-tight text-ink sm:text-4xl">
-              <MaskedLines lines={["It started with a", "grandmother's album."]} />
+              <MaskedLines lines={["It started with a", "simple idea."]} />
             </h2>
             <Reveal delay={0.2}>
               <p className="mt-6 text-base leading-relaxed text-smoke md:text-lg">
                 Pages of fading prints — no poses, no performances, just people
-                being people. That album taught us what a photograph is really
+                being people. a simple idea that taught us what a photograph is really
                 for: not to impress strangers, but to remind the people you
                 love who they were, exactly as they were.
               </p>
@@ -82,7 +82,7 @@ export default function About() {
                 this frame deserve a page? If not, we keep waiting.
               </p>
               <p className="mt-8 font-hand text-3xl text-brand">
-                — Ath, on why we started
+                — Athian, on why we started
               </p>
             </Reveal>
           </div>
