@@ -8,7 +8,7 @@ import { waLink } from "@/data/site";
 const TERMS = [
   { title: "Booking", text: "A 30% deposit secures your date. The remainder is due on the session day." },
   { title: "Reschedule", text: "Life happens. One free reschedule up to 72 hours before the session." },
-  { title: "Delivery", text: "Edited galleries arrive within 7–14 days, depending on the package." },
+  { title: "Delivery", text: "Edited galleries arrive within 1–2 days, depending on the package." },
 ];
 
 export default function Pricing() {
@@ -57,11 +57,10 @@ export default function Pricing() {
                   data-testid={`pricing-slide-${p.id}`}
                 >
                   <div
-                    className={`relative flex w-full flex-col overflow-hidden border bg-white p-8 transition-[transform,opacity,border-color,box-shadow] duration-500 ease-cinematic ${
-                      active
-                        ? "scale-100 border-brand/50 opacity-100 shadow-[0_28px_60px_-28px_rgba(17,17,17,0.3)]"
-                        : "scale-[0.94] border-black/10 opacity-50"
-                    }`}
+                    className={`relative flex w-full flex-col overflow-hidden border bg-white p-8 transition-[transform,opacity,border-color,box-shadow] duration-500 ease-cinematic ${active
+                      ? "scale-100 border-brand/50 opacity-100 shadow-[0_28px_60px_-28px_rgba(17,17,17,0.3)]"
+                      : "scale-[0.94] border-black/10 opacity-50"
+                      }`}
                   >
                     {/* Construction tape X */}
                     {under && (
@@ -130,11 +129,10 @@ export default function Pricing() {
                           target="_blank"
                           rel="noreferrer"
                           data-testid={`pricing-inquire-${p.id}`}
-                          className={`mt-8 block px-6 py-3.5 text-center text-xs font-medium uppercase tracking-[0.25em] transition-colors duration-300 ${
-                            active
-                              ? "bg-brand text-white hover:bg-ink"
-                              : "border border-ink/20 text-ink hover:border-brand hover:text-brand"
-                          }`}
+                          className={`mt-8 block px-6 py-3.5 text-center text-xs font-medium uppercase tracking-[0.25em] transition-colors duration-300 ${active
+                            ? "bg-brand text-white hover:bg-ink"
+                            : "border border-ink/20 text-ink hover:border-brand hover:text-brand"
+                            }`}
                         >
                           Inquire
                         </a>
@@ -166,9 +164,8 @@ export default function Pricing() {
                 className="py-2"
               >
                 <span
-                  className={`block h-px transition-all duration-500 ease-cinematic ${
-                    i === selected ? "w-10 bg-brand" : "w-5 bg-ink/20 hover:bg-ink/50"
-                  }`}
+                  className={`block h-px transition-all duration-500 ease-cinematic ${i === selected ? "w-10 bg-brand" : "w-5 bg-ink/20 hover:bg-ink/50"
+                    }`}
                 />
               </button>
             ))}
@@ -207,9 +204,8 @@ export default function Pricing() {
               <Reveal key={a.id} delay={0.08 * i} className="h-full">
                 <div
                   data-testid={`addon-card-${a.id}`}
-                  className={`relative flex h-full flex-col overflow-hidden border bg-white p-7 pt-9 ${
-                    under ? "border-black/20" : "border-black/10"
-                  }`}
+                  className={`relative flex h-full flex-col overflow-hidden border bg-white p-7 pt-9 ${under ? "border-black/20" : "border-black/10"
+                    }`}
                 >
                   {under && (
                     <div
@@ -230,17 +226,15 @@ export default function Pricing() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className={`mt-5 font-display text-2xl font-normal tracking-tight ${
-                      under ? "text-smoke" : "text-ink"
-                    }`}
+                    className={`mt-5 font-display text-2xl font-normal tracking-tight ${under ? "text-smoke" : "text-ink"
+                      }`}
                   >
                     {a.name}
                   </h3>
                   <div className="mt-2 flex items-baseline gap-2">
                     <span
-                      className={`font-display text-3xl font-normal ${
-                        under ? "text-smoke" : "text-ink"
-                      }`}
+                      className={`font-display text-3xl font-normal ${under ? "text-smoke" : "text-ink"
+                        }`}
                     >
                       {a.price}
                     </span>

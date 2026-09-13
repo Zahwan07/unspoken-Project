@@ -12,12 +12,6 @@ const FEATURED = [
     label: s.caption,
     to: `/portfolio?p=${s.photographerSlug}`,
   })),
-  {
-    src: "/uploads/a4.jpg",
-    alt: "Resting against a stone wall between classes",
-    label: "Between Classes — Shot by Zahwan",
-    to: "/portfolio?p=zahwan",
-  },
 ];
 
 export default function Home() {

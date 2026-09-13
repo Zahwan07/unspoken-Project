@@ -1,14 +1,14 @@
 // Hero carousel slides — update image paths and captions to match real shots.
 export const HERO_SLIDES = [
   {
-    image: "/uploads/Zahwan-1.jpg",
-    caption: "Graduation Chaos — Shot by Zahwan",
+    image: "/uploads/Hero-1.jpg",
+    caption: "A nimble moment — Shot by Zahwan",
     category: "Celebration",
     photographerSlug: "Zahwan",
     alt: "Graduates celebrating with smoke and flags",
   },
   {
-    image: "/uploads/fadhlan-1.jpg",
+    image: "/uploads/showcase5.jpg",
     caption: "Four Years, One Frame — Shot by Fadhlan",
     category: "Graduation",
     photographerSlug: "fadhlan",
@@ -22,15 +22,23 @@ export const HERO_SLIDES = [
     alt: "Silhouette of a graduate by a window",
   },
   {
-    image: "/uploads/Sabila-1.jpg",
-    caption: "Nature & Light — Shot by Sabila",
+    image: "/uploads/showcase10.jpg",
+    caption: "A deserved rest— Shot by Zahwan",
     category: "Nature",
-    photographerSlug: "sabila",
-    alt: "Landscape in golden hour",
+    photographerSlug: "zahwan",
+    alt: "A deserved rest",
   },
   {
-    image: "/uploads/Zahwan-5.jpg",
-    caption: "In the Moment — Shot by Zahwan",
+    image: "/uploads/fadhlan-4.jpg",
+    caption: "Closeup Locomotive — Shot by Sabila",
+    category: "Candid",
+    photographerSlug: "zahwan",
+    alt: "Candid close-up during a celebration",
+  },
+
+  {
+    image: "/uploads/Sabila-2.jpg",
+    caption: "The Cityscape — Shot by Sabila",
     category: "Candid",
     photographerSlug: "zahwan",
     alt: "Candid close-up during a celebration",

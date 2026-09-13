@@ -5,11 +5,9 @@ export const FEATURED = [
   { src: "/uploads/fadhlan-1.jpg", tag: "Portrait — Fadhlan", note: "four years, one frame" },
   { src: "/uploads/zaki-2.jpg", tag: "B&W — Zaki", note: "the quiet before the applause" },
   { src: "/uploads/fadhlan-2.jpg", tag: "Portrait — Fadhlan", note: "window light does half the work" },
-  { src: "/uploads/Zahwan-3.jpg", tag: "Candid — Zahwan", note: "between classes" },
 ];
 
 export const GRID = [
-  { src: "/uploads/Zahwan-3.jpg", tag: "Candid — Zahwan", note: "between classes" },
   { src: "/uploads/zaki-3.jpg", tag: "Street — Zaki", note: "rush hour poetry" },
   { src: "/uploads/fadhlan-3.jpg", tag: "Portrait — Fadhlan", note: "golden hour, obviously" },
   { src: "/uploads/zaki-2.jpg", tag: "B&W — Zaki", note: "the quiet before" },

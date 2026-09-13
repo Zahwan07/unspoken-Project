@@ -31,7 +31,7 @@ export const PHOTOGRAPHERS = [
     specialty: "Portrait",
     tagline: "Specializing in capturing the beauty and emotion of individual and group portraits.",
     portrait: "/uploads/fadhlan-0.jpg",
-    cover: "/uploads/fadhlan-1.jpg",
+    cover: "/uploads/fadhlan-0.jpg",
     gallery: [
       { src: "/uploads/fadhlan-1.jpg", alt: "Portrait — natural light" },
       { src: "/uploads/fadhlan-2.jpg", alt: "Portrait — window light" },
@@ -45,7 +45,7 @@ export const PHOTOGRAPHERS = [
     specialty: "Street",
     tagline: "Finding beauty in everyday moments and urban landscapes.",
     portrait: "/uploads/zaki-0.jpg",
-    cover: "/uploads/zaki-2.jpg",
+    cover: "/uploads/zaki-0.jpg",
     gallery: [
       { src: "/uploads/zaki-1.jpg", alt: "Street — motion" },
       { src: "/uploads/zaki-2.jpg", alt: "Street — silhouette" },
@@ -97,7 +97,7 @@ export const PHOTOGRAPHERS = [
     specialty: "Nature & Video",
     tagline: "Loves to capture the beauty of nature and the best moments of life.",
     portrait: "/uploads/sabila-0.jpg",
-    cover: "/uploads/Sabila-1.jpg",
+    cover: "/uploads/Sabila-0.jpg",
     gallery: [
       { src: "/uploads/Sabila-1.jpg", alt: "Nature — forest" },
       { src: "/uploads/Sabila-2.jpg", alt: "Nature — landscape" },

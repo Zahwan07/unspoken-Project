@@ -52,7 +52,7 @@ export const PACKAGES = [
     unit: "hourly",
     featured: false,
     inclusions: [
-     "1 hour photo session",
+      "1 hour photo session",
       "On-site locations",
       "10 edited photos",
       "Online gallery",
@@ -86,7 +86,7 @@ export const ADD_ONS = [
   {
     id: "extra-hour",
     name: "Extra Hour of Coverage",
-    price: "IDR 500K",
+    price: "IDR 50K",
     unit: "/ hour",
     video: false,
     waText: "Hello! I'd like to add an extra hour of coverage to my package.",
@@ -94,7 +94,7 @@ export const ADD_ONS = [
   {
     id: "extra-video",
     name: "Additional Video",
-    price: "IDR 1.5 JT",
+    price: "IDR 100 K",
     unit: "/ highlight reel",
     video: true,
     waText: "Hello! I'd like to add a video highlight to my package.",
@@ -102,7 +102,7 @@ export const ADD_ONS = [
   {
     id: "extra-photos",
     name: "Additional Edited Photos",
-    price: "IDR 250K",
+    price: "IDR 25 K",
     unit: "/ 5 photos",
     video: false,
     waText: "Hello! I'd like to add extra edited photos (per 5) to my package.",
